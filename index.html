@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Kumar | AI / ML Engineer</title>
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND ANIMATION -->
+<canvas id="bg-canvas"></canvas>
+
+<header class="header">
+  <nav class="nav container">
+    <ul class="nav__list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+
+<!-- ================= HOME ================= -->
+<section class="home section" id="home">
+  <div class="home__container container grid">
+
+    <!-- LEFT -->
+    <div class="home__data">
+      <span class="home__subtitle">Hello, I'm</span>
+
+      <h1 class="home__title">
+        Sahil <br> Kumar
+      </h1>
+
+      <h3 class="home__profession"> Generative AI Engineer</h3>
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="home__image">
+      <div class="profile-wrapper">
+        <img src="assets/img/profile.png" alt="Sahil Kumar">
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="home__info">
+      <h3>Creative Focus</h3>
+      <p>
+        Generative AI Systems<br>
+        LLM Applications<br>
+        RAG & Prompt Engineering<br>
+        Machine Learning<br>
+        Natural Language Processing<br>
+        Deep Learning
+      </p>
+
+      <h3>Tools</h3>
+      <p>
+        LLMs, LangChain<br>
+        Vector Databases<br>
+        FastAPI, Docker<br>
+        Python, Pandas<br>
+        NumPy, SQL/NoSQL<br>
+        Matplotlib, Seaborn
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about section" id="about">
+  <div class="container">
+    <h2 class="section__title"><span>About</span></h2>
+
+    <p class="about__description">
+      I am a Generative AI Engineer who enjoys building practical AI applications using
+      large language models. I work mainly with Python, LangChain, and FastAPI, and use
+      Docker to package and run applications. My projects cover Generative AI, machine
+      learning, and deep learning, and I am currently preparing for my first role in
+      the AI industry.What drives me is curiosity and the satisfaction of seeing an idea 
+      turn into something real and useful.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <h2 class="section__title"><span>Projects</span></h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <h3 class="project__title">Customer Churn Prediction</h3>
+
+      <p class="project__description">
+        This project focuses on predicting whether a customer is likely to leave a
+        service based on historical behavior data. The dataset was cleaned and analyzed,
+        followed by feature engineering and training multiple classification models
+        using Python and scikit-learn.
+      </p>
+
+      <p class="project__description">
+        The objective was to better understand customer behavior and identify customers
+        at high risk of churn.
+      </p>
+
+      <p class="project__tech">
+        <strong>Technologies:</strong> Python, Pandas, scikit-learn
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3 class="project__title">End-to-End Machine Learning Pipeline (MLOps)</h3>
+
+      <p class="project__description">
+        This project implements an end-to-end machine learning pipeline covering data
+        preprocessing, model training, evaluation, and experiment tracking.
+      </p>
+
+      <p class="project__description">
+        MLflow was used to log experiments, parameters, and metrics, while Docker was
+        used to containerize the pipeline for consistent execution across environments.
+      </p>
+
+      <p class="project__tech">
+        <strong>Technologies:</strong> Python, MLflow, Docker
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= EDUCATION ================= -->
+<section class="education section" id="education">
+  <div class="container">
+    <h2 class="section__title"><span>Education</span></h2>
+
+    <div class="education__content">
+      <h3>Bachelor of Commerce (B.Com)</h3>
+      <p>Banking and Financial Support Services</p>
+      <p><strong>Maharaja Agrasen Himalayan Garhwal University</strong></p>
+      <p>May 2019 – July 2022</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <h2 class="section__title">Contact</h2>
+
+    <p class="contact__email">sahil.kumar.tech01@gmail.com</p>
+
+    <div class="contact__socials">
+      <a href="mailto:sahil.kumar.tech01@gmail.com" class="contact__icon">
+        <i class="ri-mail-fill"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sahil-kumar-321a2839b/" target="_blank" class="contact__icon">
+        <i class="ri-linkedin-fill"></i>
+      </a>
+
+      <a href="https://github.com/sahilkumartech01-beep" target="_blank" class="contact__icon">
+        <i class="ri-github-fill"></i>
+      </a>
+
+      <a href="https://hub.docker.com/u/sahilkumar01docker" target="_blank" class="contact__icon">
+        <i class="ri-server-fill"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Sahil Kumar</p>
+</footer>
+
+<!-- BACKGROUND ANIMATION SCRIPT -->
+<script>
+const canvas = document.getElementById("bg-canvas");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const points = [];
+for (let i = 0; i < 90; i++) {
+  points.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.35,
+    vy: (Math.random() - 0.5) * 0.35
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  points.forEach((p, i) => {
+    p.x += p.vx;
+    p.y += p.vy;
+
+    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+    ctx.fillStyle = "rgba(123,92,255,0.85)";
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    for (let j = i + 1; j < points.length; j++) {
+      const p2 = points[j];
+      const d = Math.hypot(p.x - p2.x, p.y - p2.y);
+      if (d < 130) {
+        ctx.strokeStyle = "rgba(123,92,255,0.12)";
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.stroke();
+      }
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+</body>
+</html>
+
+
+
