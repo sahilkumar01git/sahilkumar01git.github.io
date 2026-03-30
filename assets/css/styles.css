@@ -258,6 +258,19 @@ ul {
   margin-bottom: 1rem; /* space between paragraphs */
 }
 
+/* ================= PROJECT LINKS PURPLE ================= */
+
+.project__links a {
+  color: var(--first-color);
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.project__links a:hover {
+  color: #9b87ff;
+  text-decoration: underline;
+}
+
 .project__tech {
   font-size: 0.9rem;
   opacity: 0.9;
